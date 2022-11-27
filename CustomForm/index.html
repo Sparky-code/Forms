@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CustomForm</title>
+</head>
+<body>
+<div class="content">
+    <div class="logo-banner">
+    <!-- <div><img src="img/logo.svg" alt="an abstract generated logo"></div> -->    
+    </div>
+        <div class="engage">
+            <div id="callout">
+                <p class="banner">
+                    Join the next generation of digital development for a physical world! <br>
+                    Create your account below to engage with a like minded community, <br>
+                    and gain access to exciting opportunities!
+
+                </p>
+            </div>
+            <div id="form">
+                <form action="POST">
+                    <div>
+                        <label for="fname">First Name </label>
+                        <input type="text" name="fname" id="fname" required>
+                        <label for="lname">Last Name </label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email </label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="pnum">Phone Number </label>
+                        <input type="number" name="pnum" id="pnum">
+                    </div>
+                    <div>
+                        <label for="password">Password </label>
+                        <input type="text" name="password" id="password" required>
+                        <label for="conf-pass">Confirm Password</label>
+                        <input type="text" name="conf-pass" id="conf-pass" required>
+                    </div>
+                </form>
+            </div>
+            <div id="login">
+                <div></div>
+                <button class="login">Create Account</button>
+                <p class="login">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+</div>
+</body>
+</html>

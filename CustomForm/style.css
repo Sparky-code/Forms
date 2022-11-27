@@ -1,0 +1,158 @@
+
+
+
+.content {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(245, 245, 235);
+}
+
+.logo-banner {
+    width: 33vw;
+    height: 100vh;
+    background-image: url(img/nature_rock.jpg);
+    background-position-y: center;
+    background-position-x: 66%;
+}
+
+.engage {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#callout {
+    height: 35vh;
+    background: rgb(245, 245, 235);
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+}
+
+#form {
+    height: 25vh;
+    background: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#login {
+    height: 20vh;
+    font-size: 12px;
+    position: relative;
+    font-size: 14px;
+    top: 5rem;
+    left: 5rem;
+}
+
+button {
+    background-color: rgb(190, 98, 12);
+    width: 10rem;
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+    color: aliceblue;
+    padding: 15px;
+    border: solid grey 0.5px;
+    border-radius: 5px;
+}
+
+a {
+    color: brown;
+}
+
+
+
+/* A photo of Arches National Park - Photo by @TomMorbey on Unsplash */
+
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+    -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
